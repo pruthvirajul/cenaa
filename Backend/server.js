@@ -11,9 +11,9 @@ app.use(express.json());
 // PostgreSQL connection configuration
 const pool = new Pool({
     user: 'postgres', // Replace with your PostgreSQL username
-    host: 'localhost',
+    host: 'postgres',
     database: 'job_portal',
-    password: 'root', // Replace with your PostgreSQL password
+    password: 'admin321', // Replace with your PostgreSQL password
     port: 5432,
 });
 
@@ -119,5 +119,5 @@ app.post('/api/jobs', async (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at http://56.228.21.217:${port}`);
 });
